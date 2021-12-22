@@ -1,18 +1,32 @@
-package com.example.foododeringanddeliveryapp
+package com.joytekmotion.yemilicious.ui.seller
+
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.*
+import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
+import com.joytekmotion.yemilicious.R
 import com.joytekmotion.yemilicious.ui.LoginActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.joytekmotion.yemilicious.ui.SetupActivity
+import kotlinx.android.synthetic.main.fragment_notifications.*
+import java.io.ByteArrayOutputStream
 
-class MainActivity : AppCompatActivity() {
+
+@Suppress("UNREACHABLE_CODE", "DEPRECATION")
+class NotificationsFragment : Fragment() {
     private val DEFAULT_IMAGE_URL = "https://picsum.photos/200"
     private val REQUEST_IMAGE_CAPTURE = 100
     private val currentUser = FirebaseAuth.getInstance().currentUser
@@ -30,26 +44,31 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etphone: TextView
     private lateinit var btnsave: Button
     private lateinit var choosephoto: ImageButton
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
-        etfullname = findViewById(R.id.ffullname)
-        eefullname = findViewById(R.id.ettvfullname)
-        eeemail = findViewById(R.id.ettvemail)
-        etemail = findViewById(R.id.eemail)
-        etphone = findViewById(R.id.pphone)
-        backhome = findViewById(R.id.backhome)
-        camera = findViewById(R.id.camera)
-        btnsave = findViewById(R.id.btnsave)
-        choosephoto = findViewById(R.id.choosephoto)
+        val view = inflater.inflate(R.layout.fragment_notifications, container, false)
 
 
-        val sharedPref = Activity().getPreferences(Context.MODE_PRIVATE)
+        etfullname = view.findViewById(R.id.ffullname)
+        eefullname = view.findViewById(R.id.ettvfullname)
+        eeemail = view.findViewById(R.id.ettvemail)
+        etemail = view.findViewById(R.id.eemail)
+        etphone = view.findViewById(R.id.pphone)
+        backhome = view.findViewById(R.id.backhome)
+        camera = view.findViewById(R.id.camera)
+        btnsave = view.findViewById(R.id.btnsave)
+        choosephoto = view.findViewById(R.id.choosephoto)
+
+
+        val sharedPref = requireActivity().getPreferences(Context.MODE_PRIVATE)
         val isLogin = sharedPref.getString("Email", "1")
 
         if (isLogin == "1") {
-            var email = Activity().intent.getStringExtra("email")
+            var email = requireActivity().intent.getStringExtra("email")
             if (email != null) {
                 setText(email)
                 with(sharedPref.edit())
@@ -58,7 +77,7 @@ class MainActivity : AppCompatActivity() {
                     apply()
                 }
             } else {
-                var intent = Intent(this, LoginActivity::class.java)
+                var intent = Intent(activity, LoginActivity::class.java)
                 startActivity(intent)
 
             }
@@ -67,19 +86,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         backhome.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(activity, SetupActivity::class.java))
         }
 
-        choosephoto.setOnClickListener {
 
-
-        }
         btnsave.setOnClickListener {
 
+
+
+            val name = ettvfullname.text.toString().trim()
+
+            if (name.isEmpty()) {
+                ettvfullname.error = "name required"
+                ettvfullname.requestFocus()
+                return@setOnClickListener
+            }
+
+
+            progressbar.visibility = View.VISIBLE
+
+
+
         }
+        return view
 
     }
-
     private fun setText(email: String?) {
         db = FirebaseFirestore.getInstance()
         if (email != null) {

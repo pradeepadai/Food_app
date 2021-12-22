@@ -1,16 +1,23 @@
-package com.example.foododeringanddeliveryapp
+package com.joytekmotion.yemilicious.ui
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
+import android.util.Log
+import android.view.View
 import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.firestore.FirebaseFirestore
-import com.joytekmotion.yemilicious.ui.LoginActivity
+import com.google.firebase.storage.FirebaseStorage
+import com.joytekmotion.yemilicious.R
 import kotlinx.android.synthetic.main.activity_main.*
+import java.io.ByteArrayOutputStream
 
 class MainActivity : AppCompatActivity() {
     private val DEFAULT_IMAGE_URL = "https://picsum.photos/200"
@@ -80,19 +87,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun setText(email: String?) {
-        db = FirebaseFirestore.getInstance()
-        if (email != null) {
-            db.collection("USERS").document(email).get()
-                .addOnSuccessListener { tasks ->
-                    ffullname.text = tasks.get("Name").toString()
-                    ettvfullname.text = tasks.get("Name").toString()
-                    ettvemail.text = tasks.get("email").toString()
-                    pphone.text = tasks.get("Phone").toString()
-                    eemail.text = tasks.get("email").toString()
+        private fun setText(email: String?) {
+            db = FirebaseFirestore.getInstance()
+            if (email != null) {
+                db.collection("USERS").document(email).get()
+                    .addOnSuccessListener { tasks ->
+                        ffullname.text = tasks.get("Name").toString()
+                        ettvfullname.text = tasks.get("Name").toString()
+                        ettvemail.text = tasks.get("email").toString()
+                        pphone.text = tasks.get("Phone").toString()
+                        eemail.text = tasks.get("email").toString()
 
-                }
+                    }
+            }
+
         }
-
     }
-}
