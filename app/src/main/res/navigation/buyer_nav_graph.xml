@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buyer_nav_graph"
+    app:startDestination="@id/DisplayShopFragment">
+
+    <fragment
+        android:id="@+id/DisplayShopFragment"
+        android:name="com.example.foododeringanddeliveryapp.ui.buyer.DisplayShopsFragment"
+        android:label="@string/choose_a_restaurant_to_buy_food">
+        <action
+            android:id="@+id/buy_food_from_shop"
+            app:destination="@id/BuyFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BuyFoodFragment"
+        android:name="com.example.foododeringanddeliveryapp.ui.buyer.BuyFoodsFragment"
+        android:label="@string/select_food_make_order">
+        <argument
+            android:name="sellerUid"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerOrdersFragment"
+        android:name="com.example.foododeringanddeliveryapp.ui.buyer.BuyerOrdersFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_buyer_orders_list" />
+</navigation>

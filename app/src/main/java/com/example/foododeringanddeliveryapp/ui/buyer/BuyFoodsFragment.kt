@@ -1,31 +1,18 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.app.AlertDialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.BuyerViewModel
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.data.OrderViewModel
-import com.joytekmotion.yemilicious.data.UserViewModel
-import com.joytekmotion.yemilicious.helpers.alertBox
-import com.joytekmotion.yemilicious.models.*
 import kotlinx.android.synthetic.main.fragment_buy_foods.*
 import kotlinx.android.synthetic.main.fragment_display_shops.*
-import kotlinx.android.synthetic.main.fragment_display_shops.rvDisplayFoods
-import kotlinx.android.synthetic.main.order_summary.view.*
-import kotlin.math.roundToInt
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
 private const val TAG = "BuyFoodsFragment"
 
 //class UnbuggyLinearLayoutManager(context: Context): LinearLayoutManager(context) {

@@ -1,12 +1,11 @@
-package com.joytekmotion.yemilicious.data
+package com.example.foododeringanddeliveryapp.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.joytekmotion.yemilicious.models.Shop
-import com.joytekmotion.yemilicious.models.ShopsContract
+
 
 class ShopViewModel(application: Application) : AndroidViewModel(application) {
 

@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.models
+package com.example.foododeringanddeliveryapp.models
 
 object OrdersContract {
     internal const val COLLECTION_NAME = "orders"

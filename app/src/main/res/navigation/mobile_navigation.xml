@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.foododeringanddeliveryapp.ui.seller.SellerHomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_edit_food"
+            app:destination="@id/addFoodActivity"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.example.foododeringanddeliveryapp.ui.seller.OrderFragment"
+        android:label="@string/title_my_orders"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.joytekmotion.yemilicious.ui.seller.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <activity
+        android:id="@+id/addFoodActivity"
+        android:name="com.example.foododeringanddeliveryapp.ui.seller.AddFoodActivity"
+        android:label="activity_add_food"
+        tools:layout="@layout/activity_add_food">
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </activity>
+</navigation>

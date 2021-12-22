@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -11,17 +11,17 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.example.foododeringanddeliveryapp.API.ServiceBuilder
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.Repository.UserRepository
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.helpers.alertBox
+import com.example.foododeringanddeliveryapp.ui.buyer.BuyersDashboardActivity
+import com.example.foododeringanddeliveryapp.ui.seller.SellerDashboardActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.joytekmotion.yemilicious.API.ServiceBuilder
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.Repository.UserRepository
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.helpers.alertBox
-import com.joytekmotion.yemilicious.ui.buyer.BuyersDashboardActivity
-import com.joytekmotion.yemilicious.ui.seller.SellerDashboardActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

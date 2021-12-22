@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,14 +11,14 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.ProfileViewModel
+import com.example.foododeringanddeliveryapp.models.Shop
+import com.example.foododeringanddeliveryapp.models.User
+import com.example.foododeringanddeliveryapp.ui.buyer.BuyersDashboardActivity
+import com.example.foododeringanddeliveryapp.ui.seller.SellerDashboardActivity
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.ProfileViewModel
-import com.joytekmotion.yemilicious.models.Shop
-import com.joytekmotion.yemilicious.models.User
-import com.joytekmotion.yemilicious.ui.buyer.BuyersDashboardActivity
-import com.joytekmotion.yemilicious.ui.seller.SellerDashboardActivity
 import kotlinx.android.synthetic.main.fragment_profile_setup.*
 import kotlinx.android.synthetic.main.fragment_profile_setup.view.*
 

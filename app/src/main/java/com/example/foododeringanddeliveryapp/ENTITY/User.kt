@@ -1,10 +1,8 @@
-package com.example.tour_guide_nepal.ENTITY
+package com.example.foododeringanddeliveryapp.ENTITY
 
 import android.os.Parcel
 import android.os.Parcelable
-import androidx.room.Entity
 import androidx.room.PrimaryKey
-
 
 @androidx.room.Entity
 data class User(

@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RatingBar
 import android.widget.TextView
-import com.joytekmotion.yemilicious.R
+import com.example.foododeringanddeliveryapp.R
+
 
 class rateapp : AppCompatActivity() {
     private lateinit var rate: TextView

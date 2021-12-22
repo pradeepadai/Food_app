@@ -14,13 +14,13 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.ui.LoginActivity
+import com.example.foododeringanddeliveryapp.ui.SetupActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.ui.LoginActivity
-import com.joytekmotion.yemilicious.ui.SetupActivity
 import kotlinx.android.synthetic.main.fragment_notifications.*
 import java.io.ByteArrayOutputStream
 

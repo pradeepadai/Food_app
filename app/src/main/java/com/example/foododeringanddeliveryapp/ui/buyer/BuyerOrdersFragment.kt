@@ -1,4 +1,5 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
+
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +8,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.data.OrderViewModel
+import com.example.foododeringanddeliveryapp.helpers.alertBox
+import com.example.foododeringanddeliveryapp.models.Order
+import com.example.foododeringanddeliveryapp.models.OrdersContract
 import com.google.android.material.snackbar.Snackbar
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.data.OrderViewModel
-import com.joytekmotion.yemilicious.helpers.alertBox
-import com.joytekmotion.yemilicious.models.Order
-import com.joytekmotion.yemilicious.models.OrdersContract
 import kotlinx.android.synthetic.main.fragment_buyer_orders_list.*
 
 /**

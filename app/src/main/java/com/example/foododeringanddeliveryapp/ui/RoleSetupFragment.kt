@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,8 +10,8 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
+import com.example.foododeringanddeliveryapp.R
 import com.google.android.material.navigation.NavigationView
-import com.joytekmotion.yemilicious.R
 import kotlinx.android.synthetic.main.fragment_role_setup.*
 
 /**

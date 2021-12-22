@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
@@ -8,9 +8,10 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.Order
-import com.joytekmotion.yemilicious.models.OrdersContract
+import androidx.room.FtsOptions
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Order
+import com.example.foododeringanddeliveryapp.models.OrdersContract
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.buyers_order_item.view.*
 import java.util.*
@@ -127,8 +128,8 @@ class BuyersOrdersRecyclerViewAdapter(
         return mDiffer.currentList.size
     }
 
-    fun submitList(data: ArrayList<Order>) {
-        mDiffer.submitList(data)
+    fun submitList(data: ArrayList<FtsOptions.Order>) {
+        with(mDiffer) { submitList(data) }
     }
 
     //    fun updateList(newOrders: ArrayList<Order>?) {

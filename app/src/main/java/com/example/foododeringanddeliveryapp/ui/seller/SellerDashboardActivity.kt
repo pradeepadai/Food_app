@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.seller
+package com.example.foododeringanddeliveryapp.ui.seller
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.ui.LoginActivity
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.ui.LoginActivity
 import kotlinx.android.synthetic.main.activity_seller_dashboard.*
 
 private const val TAG = "SellerDashboardActivity"

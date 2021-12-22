@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.BuyerViewModel
-import com.joytekmotion.yemilicious.models.User
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.BuyerViewModel
+import com.example.foododeringanddeliveryapp.models.User
 import kotlinx.android.synthetic.main.fragment_display_shops.*
 
 /**

@@ -1,11 +1,6 @@
-package com.joytekmotion.yemilicious.API
+package com.example.foododeringanddeliveryapp.API
 
-import android.R
-import android.net.wifi.WifiConfiguration.AuthAlgorithm.strings
-import android.net.wifi.WifiConfiguration.GroupCipher.strings
-import android.net.wifi.WifiConfiguration.KeyMgmt.strings
-import android.provider.Settings.Global.getString
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

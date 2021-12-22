@@ -1,5 +1,4 @@
-package com.joytekmotion.yemilicious.API
-
+package com.example.foododeringanddeliveryapp.API
 import org.json.JSONException
 import org.json.JSONObject
 import retrofit2.Response

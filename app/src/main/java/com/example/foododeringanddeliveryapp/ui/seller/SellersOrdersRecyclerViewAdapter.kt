@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.seller
+package com.example.foododeringanddeliveryapp.ui.seller
 
 import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.Order
-import com.joytekmotion.yemilicious.models.OrdersContract
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Order
+import com.example.foododeringanddeliveryapp.models.OrdersContract
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.seller_orders_list.view.*
 import java.util.*

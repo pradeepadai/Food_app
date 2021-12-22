@@ -1,18 +1,18 @@
-package com.joytekmotion.yemilicious.data
+package com.example.foododeringanddeliveryapp.data
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.google.firebase.auth.*
+import com.example.foododeringanddeliveryapp.models.User
+import com.example.foododeringanddeliveryapp.models.UsersContract
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.R
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.User
-import com.joytekmotion.yemilicious.models.UsersContract
 
 private const val TAG = "RegisterUsersViewModel"
 
@@ -44,14 +44,14 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         Log.d(TAG, "login called!")
         auth.signInWithEmailAndPassword(username, password)
             .addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        Log.d(TAG, "login: signInWithEmail success")
-                        _currentUser.value = auth.currentUser
-                    } else {
-                        Log.d(TAG, "login: signInWithEmail success")
-                        _loginError.value = getApplication<Application>().getString(R.string.login_error)
-                    }
+                if (it.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    Log.d(TAG, "login: signInWithEmail success")
+                    _currentUser.value = auth.currentUser
+                } else {
+                    Log.d(TAG, "login: signInWithEmail success")
+//                    _loginError.value = getApplication<Application>().getString(R.string.error)
+                }
             }
     }
 
@@ -84,9 +84,9 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
                         _userRole.value = it.toObject<User>()?.role
                     } else _userRole.value = null
                 }.addOnFailureListener {
-                        _loginError.value = it.message
-                        Log.d(TAG, "Exception >> ${it.message}")
-                    }
+                    _loginError.value = it.message
+                    Log.d(TAG, "Exception >> ${it.message}")
+                }
         }
     }
 

@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.content.Context
 import android.content.Intent
@@ -23,10 +23,10 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.example.foododeringanddeliveryapp.R
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.joytekmotion.yemilicious.R
 import kotlinx.android.synthetic.main.activity_setup.*
 
 class SetupActivity : AppCompatActivity() {

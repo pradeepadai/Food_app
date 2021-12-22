@@ -1,4 +1,5 @@
-package com.example.tour_guide_nepal.Response
+package com.example.foododeringanddeliveryapp.Response
+
 
 class LoginResponse (
         val success:Boolean?=null,

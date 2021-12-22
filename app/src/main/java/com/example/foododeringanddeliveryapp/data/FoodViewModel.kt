@@ -1,18 +1,19 @@
-package com.joytekmotion.yemilicious.data
-
+package com.example.foododeringanddeliveryapp.data
 import android.app.Application
 import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Food
+import com.example.foododeringanddeliveryapp.models.FoodsContract
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FieldPath
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.*
+
 
 class FoodViewModel(application: Application) : AndroidViewModel(application) {
 

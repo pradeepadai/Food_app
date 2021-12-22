@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.content.ContentValues
 import android.content.Intent
@@ -10,14 +10,14 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.Repository.UserRepository
+import com.example.foododeringanddeliveryapp.data.RegisterUsersViewModel
+import com.example.foododeringanddeliveryapp.models.User
+import com.example.foododeringanddeliveryapp.models.UsersContract
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.Repository.UserRepository
-import com.joytekmotion.yemilicious.data.RegisterUsersViewModel
-import com.joytekmotion.yemilicious.models.User
-import com.joytekmotion.yemilicious.models.UsersContract
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -144,7 +144,7 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             } else {
                 val user =
-                    com.example.tour_guide_nepal.ENTITY.User(
+                    com.example.foododeringanddeliveryapp.ENTITY.User(
 
                         fullname = FullName,
 

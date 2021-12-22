@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,9 +10,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.ui.LoginActivity
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.ui.LoginActivity
 import kotlinx.android.synthetic.main.activity_buyers_dashboard.*
 
 class BuyersDashboardActivity : AppCompatActivity() {

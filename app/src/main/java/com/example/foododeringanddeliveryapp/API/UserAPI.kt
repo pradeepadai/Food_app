@@ -1,7 +1,7 @@
-package com.joytekmotion.yemilicious.API
+package com.example.foododeringanddeliveryapp.API
 
-import com.example.tour_guide_nepal.ENTITY.User
-import com.example.tour_guide_nepal.Response.LoginResponse
+
+import com.example.foododeringanddeliveryapp.Response.LoginResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Field
@@ -12,7 +12,7 @@ interface UserAPI {
     //register user
     @POST("registration/insert")
     suspend fun registerUser(
-        @Body user: User
+        @Body user: com.example.foododeringanddeliveryapp.ENTITY.User
     ): Response<LoginResponse>
 
     //login user

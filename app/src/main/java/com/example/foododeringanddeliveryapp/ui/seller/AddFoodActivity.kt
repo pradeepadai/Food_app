@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.seller
+package com.example.foododeringanddeliveryapp.ui.seller
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -11,15 +11,14 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import androidx.activity.viewModels
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.FoodViewModel
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.helpers.alertBox
+import com.example.foododeringanddeliveryapp.models.Food
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.data.FoodViewModel
-import com.joytekmotion.yemilicious.data.LoginViewModel
-import com.joytekmotion.yemilicious.helpers.alertBox
-import com.joytekmotion.yemilicious.models.Food
-import com.joytekmotion.yemilicious.models.User
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_add_food.*
 import java.io.ByteArrayOutputStream

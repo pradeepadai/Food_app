@@ -1,8 +1,9 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.joytekmotion.yemilicious.R
+import com.example.foododeringanddeliveryapp.R
+
 
 class termsandservice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

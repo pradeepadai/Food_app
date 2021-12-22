@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.models
+package com.example.foododeringanddeliveryapp.models
 
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.ServerTimestamp

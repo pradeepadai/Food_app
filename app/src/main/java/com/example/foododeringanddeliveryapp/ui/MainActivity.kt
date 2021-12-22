@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui
+package com.example.foododeringanddeliveryapp.ui
 
 import android.app.Activity
 import android.content.Context
@@ -11,11 +11,11 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.*
+import com.example.foododeringanddeliveryapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.joytekmotion.yemilicious.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.ByteArrayOutputStream
 

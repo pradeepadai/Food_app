@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.models
+package com.example.foododeringanddeliveryapp.models
 
 import android.os.Parcelable
 import com.google.firebase.firestore.Exclude

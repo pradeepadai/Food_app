@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.helpers
+package com.example.foododeringanddeliveryapp.helpers
 
 import android.view.View
 import com.google.android.material.snackbar.Snackbar

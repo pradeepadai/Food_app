@@ -1,14 +1,14 @@
-package com.joytekmotion.yemilicious.data
+package com.example.foododeringanddeliveryapp.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.foododeringanddeliveryapp.models.UsersContract
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import com.joytekmotion.yemilicious.models.User
-import com.joytekmotion.yemilicious.models.UsersContract
+
 
 class UserViewModel(application: Application) : AndroidViewModel(application) {
 

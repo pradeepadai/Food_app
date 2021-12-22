@@ -1,3 +1,122 @@
 <resources>
     <string name="app_name">Food Odering And Delivery App</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="app_name">Food Order and Delivery</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="backtotal">Introduction, Booking Conditions, Payment Modes, Bank Transfer, Pay by Online, Risk and Liabilities, Cancellations, Change in Pricing, Insurances</string>
+    <string name="back1">Terms &amp; Conditions</string>
+    <string name="back2">We recommend you to go through the Terms and conditions of Nepal Tour guide Team before you book any of our trip packages as you are bounded by our rules and regulations once you make the deal. Also if you have any queries regarding our terms condition please feel free to contact us.</string>
+    <string name="back21">A team of a dedicated and qualified professionals Nepal Tour Guide Team has been a dependable and trustworthy tour and trekking operators registered under the underlying regulations of the Govt. of Nepal and Tourism Board of Nepal. The motto of this organizations is Customer’s Satisfaction and much effort has been made to render services that standout from the rest.</string>
+    <string name="back3">One must have a valid passport to be eligible to book any of our trip. 20% amount is to be paid in advance for the confirmation of the booking and scanned copies of the passport is to be provided along with the payment. For any Bhutan tours 50% of the total trip amount is applicable for booking confirmation and for Tibet and India tours 30% of the total trip amount shall be applicable for booking confirmation. You may use Bank transfer or credit card for such payment. All of this amount is fully non- refundable in case of the cancellation of the trip by any client. For any cancellation to be made by the company due to unavoidable circumstances, a postpone of the trip shall be provided while the amount is non- refundable. Details have been provided in the cancellation section.</string>
+    <string name="back31">Booking in last minutes are also acceptable for any of our Nepal tours 3 days prior to the date of departure. For Bhutan, Tibet and India tours such privilege is not provided.</string>
+    <string name="back4">Payment Modes</string>
+    <string name="back5">Bank Transfer</string>
+    <string name="back6">IME/Moneygram/Western Union</string>
+    <string name="back7">Pay by Online</string>
+    <string name="back8">All of the Nepal, Tibet , India and Bhutan food are conducted under the strict rules and regulations of the tourism board of the respective country. We are not liable for any changes or cancellations of the trip under unavoidable circumstances like change in the rules and regulations of country, any government restrictions, natural disasters, political instability, cancellations of flights, delays, sickness or accidents, breakdown of vehicles, etc. Any extra cost incurred due to such circumstances shall have to be borne by the clients themselves. Therefore, we recommend you have a travel Insurance.</string>
+    <string name="back9">For any trip cancellations clients will have to inform 30 days prior to the departure. While 20% Booking amount is fully nonrefundable any extra amount received above that shall be refunded however the expenses incurred for the transfer of the refund amount shall be charged by the company. Any trips cancelled within 15 days of the date of departure shall be fully nonrefundable.</string>
+    <string name="back10">Company holds the right to change the price any time if the company feels necessary. Such actions however will be reasonable like inflation, too much changes in exchanges rates, New Govt. policies etc. but company shall not be liable to answer anyone in such case.</string>
+    <string name="back11">Our company does not provide insurance for any of our tours or treks. It is highly recommended for our clients to have travel insurance high altitude medical expenses, personal accidents, emergency evacuations, trip cancellations, loss of gears and natural calamity, theft of or damage to baggage and personal effects as our company is not responsible for any of these incidents.</string>
+    <string name="back12">Note: The above terms and conditions are applicable when clients book directly from us. For any bookings received from third party, clients shall be liable to their terms and Condition.</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Login</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_an_account">Create An <br />Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="name_required">First Name is required!</string>
+    <string name="phone_number_required">Phone Number is required!</string>
+    <string name="email_address_required">Email address is required!</string>
+    <string name="password_required">Password is required!</string>
+    <string name="password_length">Password must be greater than %1$d</string>
+    <string name="password_no_match">Passwords do not match</string>
+    <string name="password_retype_required">Password Retype is required!</string>
+<!--    <string name="error">Invalid Credentials. Please try again!</string>-->
+    <string name="title_activity_setup">Setup</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="what_would_you_like_to_do">What would you like to do?</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="finish">Finish</string>
+    <string name="fill_in_the_information_below_to_complete_setup">Fill in the information below to complete setup</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="one_more_step">One more step…</string>
+    <string name="login_to_continue">Please login to continue…</string>
+    <string name="select_role">Select Role</string>
+    <string name="home_address">Home Address</string>
+    <string name="profile_update_success">User profile updated successfully!</string>
+    <string name="shop_update_success">Shop updated successfully!</string>
+    <string name="title_activity_seller_dashboard">Seller\'s Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_orders">My Orders</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="no_seller_food_added">No Food Added Yet. <b>\"+\"</b> Click the <br /> button above to add food to your restaurant</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="no_order_yet">No Order Yet</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="food_name">Food Name</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="image_of_food">Image of the food</string>
+    <string name="save">Save</string>
+    <string name="add_food">Add Food</string>
+    <string name="edit_food">Edit Food</string>
+    <string name="food_name_required">Food name is required!</string>
+    <string name="food_price_required">Food price is required!</string>
+    <string name="food_desc_required">Food description is required!</string>
+    <string name="food_image_required">Food Image is required!</string>
+    <string name="invalid_food_price">Invalid food price</string>
+    <string name="food_price_naira">RS.%1$s</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_buyers_dashboard">Choose A Restaurant To Buy Food…</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="order_food">Order Food</string>
+    <string name="choose_a_restaurant_to_buy_food">Choose A Restaurant To Buy Food</string>
+    <string name="select_food_make_order">Select A Meal To Make An Order</string>
+    <string name="order_completed_success">Order completed successfully!</string>
+    <string name="view_food">View Food</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="ok">OK</string>
+    <string name="my_orders">My Orders</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="cancel">Cancel</string>
+    <string name="order_cancelled_success">Order cancelled successfully!</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="delivered">delivered</string>
+    <string name="order_customer_name"><b>Customer Name:</b> %1$s</string>
+    <string name="order_customer_address"><b>Address:</b> %1$s</string>
+    <string name="order_customer_phone"><b>Phone Number:</b> %1$s</string>
+    <string name="order_status_updated_success">Order status updated successfully!</string>
+    <string name="no_foods_available">Sorry, but there are no foods available in this restaurant.
+        <br />You can try another one!</string>
+
 </resources>

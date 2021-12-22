@@ -1,12 +1,12 @@
-package com.joytekmotion.yemilicious.ui.buyer
+package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.Shop
-import com.joytekmotion.yemilicious.models.User
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Shop
+import com.example.foododeringanddeliveryapp.models.User
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.shops_list.view.*
 
@@ -48,7 +48,7 @@ class ShopRecyclerViewAdapter(
         return if (!users.isNullOrEmpty()) users!!.size else 0
     }
 
-    fun updateList(newUsers: ArrayList<User>?) {
+    fun updateList(newUsers: ArrayList<com.google.firebase.firestore.auth.User>) {
         if (newUsers != users) {
             val numItems = itemCount
             users = newUsers

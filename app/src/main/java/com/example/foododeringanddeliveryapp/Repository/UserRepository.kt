@@ -1,13 +1,10 @@
-package com.joytekmotion.yemilicious.Repository
+package com.example.foododeringanddeliveryapp.Repository
 
-import com.example.tour_guide_nepal.ENTITY.User
+import com.example.foododeringanddeliveryapp.API.MyApiRequest
+import com.example.foododeringanddeliveryapp.API.ServiceBuilder
+import com.example.foododeringanddeliveryapp.API.UserAPI
+import com.example.foododeringanddeliveryapp.Response.LoginResponse
 
-
-
-import com.example.tour_guide_nepal.Response.LoginResponse
-import com.joytekmotion.yemilicious.API.MyApiRequest
-import com.joytekmotion.yemilicious.API.ServiceBuilder
-import com.joytekmotion.yemilicious.API.UserAPI
 
 class UserRepository:  MyApiRequest() {
     private val userAPI = ServiceBuilder.buildService(UserAPI::class.java)

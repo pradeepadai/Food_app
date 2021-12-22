@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.models
+package com.example.foododeringanddeliveryapp.models
 
 data class Shop(
     val name: String,

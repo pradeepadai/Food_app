@@ -1,4 +1,4 @@
-package com.joytekmotion.yemilicious.ui.seller
+package com.example.foododeringanddeliveryapp.ui.seller
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Food
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import com.joytekmotion.yemilicious.R
-import com.joytekmotion.yemilicious.models.Food
 import com.squareup.picasso.Picasso
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.seller_food_list.view.*
