@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+    android:id="@+id/loginContainer"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_loginback"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoginActivity">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:scaleType="fitXY"
+                android:alpha=".8"
+                android:layout_gravity="center"
+                android:layout_width="414dp"
+                android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="-240dp"
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tourlogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/spalashlogo" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="FOOD APP Nepal"
+                    android:textSize="29dp"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="14dp"
+                android:alpha=".9"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:background="@drawable/gradient_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textColor="@color/black"
+                        android:textSize="35dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Email"
+                        app:endIconMode="clear_text"
+                        app:startIconDrawable="@drawable/person">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Password"
+                        app:endIconMode="password_toggle"
+                        app:startIconDrawable="@drawable/lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPassword"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/forgotpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_gravity="center|center_vertical"
+                    android:id="@+id/saveuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Remember me"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_margin="20dp"
+                    android:padding="16dp"
+                    android:id="@+id/btnlogin"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="login"
+                    android:textSize="20dp"
+                    app:backgroundTint="#f06616" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/lineee"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue with:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:src="@drawable/lineee"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/gogole" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/facebook" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/insta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textSize="17dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/linkregister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create one"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvOrderListFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alfa_slab_one"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Yam and Eggs" />
+
+        <TextView
+            android:id="@+id/tvOrderListPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="15"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="top|end"
+            android:textColor="@color/primary"
+            android:textSize="14sp"
+            tools:text="N5000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOrderListShopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/didact_gothic"
+        android:textStyle="bold"
+        tools:text="MADAM RICE " />
+
+    <TextView
+        android:id="@+id/tvOrderListAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/didact_gothic"
+        android:textStyle="italic"
+        tools:text="No. 673 Udu road, Okuokoko Warri, Delta State" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvOrderListStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            tools:text="Pending..." />
+
+        <Button
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="0dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:backgroundTint="@color/yellow"
+            app:cornerRadius="30dp" />
+
+        <Button
+            android:id="@+id/btnOrderDelivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="2"
+            android:paddingStart="5dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="0dp"
+            android:text="@string/delivered"
+            android:textColor="@color/icons"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

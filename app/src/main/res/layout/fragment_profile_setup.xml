@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileSetupFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/setup_background"
+        app:tint="#4D000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tintMode="src_over" />
+
+    <TextView
+        android:id="@+id/tvSetupProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/bungee"
+        android:shadowColor="@color/black"
+        android:shadowDx="4"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="@string/one_more_step"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinishSetup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetupProfile">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:contentPadding="15dp"
+            app:contentPaddingBottom="20dp"
+            app:contentPaddingTop="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/didact_gothic"
+                    android:text="@string/fill_in_the_information_below_to_complete_setup"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtShopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/didact_gothic"
+                    android:hint="@string/shop_name"
+                    android:inputType="textAutoCorrect|textPersonName|text|textAutoComplete"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/didact_gothic"
+                    android:hint="@string/shop_address"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/didact_gothic"
+                    android:hint="@string/phone_number"
+                    android:inputType="text|textAutoComplete|phone"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFinishSetup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableEnd="@drawable/ic_arrow_right_alt_24px"
+        android:enabled="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:text="@string/finish"
+        android:textColor="@color/icons"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_dark"
+        app:cornerRadius="30dp"
+        app:iconPadding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="true"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/icons"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_dark"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/round_arrow_back_ios_white_24dp"
+        app:iconPadding="0dp"
+        app:iconTint="@color/icons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

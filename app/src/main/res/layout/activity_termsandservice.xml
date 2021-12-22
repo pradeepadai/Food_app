@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_contact"
+    tools:context=".ui.termsandservice">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/tour"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="Food App Nepal"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Terms and Conditions"
+                android:textSize="35dp"
+
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Introduction"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back2"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back21"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:text="Booking Conditions"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back3"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back31"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:textColor="@color/black"
+                android:text="Risk and Liabilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back8"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:text="Cancellations"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back9"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:text="Change in Pricing"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back10"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:text="Insurance"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back11"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/back12"
+                android:textSize="16dp"
+                android:textStyle="italic|bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>

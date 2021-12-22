@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytDisplayShops"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.buyer.DisplayShopsFragment">
+
+    <TextView
+        android:id="@+id/tvNoShops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:padding="16dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="No Shops Available At The Moment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDisplayFoods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/shops_list" />
+</LinearLayout>

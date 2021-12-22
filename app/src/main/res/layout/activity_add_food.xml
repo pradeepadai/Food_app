@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addFoodContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.seller.AddFoodActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.YemiliciousPot.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtFoodName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/food_name"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/edtFoodPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        app:layout_constraintEnd_toEndOf="@+id/edtFoodName"
+        app:layout_constraintStart_toStartOf="@+id/edtFoodName"
+        app:layout_constraintTop_toBottomOf="@+id/edtFoodName" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/edtFoodDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:lines="10"
+        android:maxLength="500"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/edtFoodPrice"
+        app:layout_constraintStart_toStartOf="@+id/edtFoodPrice"
+        app:layout_constraintTop_toBottomOf="@+id/edtFoodPrice" />
+
+    <ImageView
+        android:id="@+id/uploadFoodView"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_of_food"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/edtFoodDescription"
+        app:layout_constraintStart_toStartOf="@+id/edtFoodDescription"
+        app:layout_constraintTop_toBottomOf="@+id/edtFoodDescription"
+        tools:srcCompat="@drawable/default_food" />
+
+    <Button
+        android:id="@+id/btnUploadFoodImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/upload_image"
+        app:icon="@drawable/baseline_cloud_upload_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadFoodView" />
+
+    <Button
+        android:id="@+id/btnSaveFood"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:drawableEnd="@drawable/ic_arrow_right_alt_24px"
+        android:enabled="false"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="15dp"
+        android:text="@string/save"
+        android:textColor="@color/icons"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_dark"
+        app:cornerRadius="30dp"
+        app:iconPadding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

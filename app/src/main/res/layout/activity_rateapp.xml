@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+    tools:context=".ui.rateapp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Our App"
+            android:textSize="30dp"
+            android:id="@+id/rate"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:stepSize="0.25"
+            android:numStars="5"
+            android:rating="3.5"
+            />
+        <TextView
+            android:id="@+id/rateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <EditText
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Write Review.................."
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/submitBtn"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/showRating"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
