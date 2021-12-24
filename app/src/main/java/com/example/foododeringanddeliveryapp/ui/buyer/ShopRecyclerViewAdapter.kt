@@ -48,7 +48,8 @@ class ShopRecyclerViewAdapter(
         return if (!users.isNullOrEmpty()) users!!.size else 0
     }
 
-    fun updateList(newUsers: ArrayList<com.google.firebase.firestore.auth.User>) {
+
+    fun updateList(newUsers: ArrayList<User>) {
         if (newUsers != users) {
             val numItems = itemCount
             users = newUsers
@@ -56,4 +57,6 @@ class ShopRecyclerViewAdapter(
             else notifyItemRangeRemoved(0, numItems)
         }
     }
+
+
 }

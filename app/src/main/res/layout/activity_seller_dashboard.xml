@@ -4,7 +4,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.YemiliciousPot.ActionBar">
+    android:theme="@style/Animation.Design.BottomSheetDialog">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/sellerDashboardToolbar"
@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:background="@color/primary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/Theme.YemiliciousPot.ActionBar"
+        android:theme="@style/Animation.Design.BottomSheetDialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/Theme.YemiliciousPot.PopupOverlay"
+        app:popupTheme="@style/Animation.Design.BottomSheetDialog"
         app:titleTextColor="@color/icons" />
 
     <androidx.fragment.app.FragmentContainerView

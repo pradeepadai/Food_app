@@ -1,6 +1,5 @@
 package com.example.foododeringanddeliveryapp.ui.buyer
 
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,16 +16,13 @@ import com.example.foododeringanddeliveryapp.models.OrdersContract
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_buyer_orders_list.*
 
-/**
- * A fragment representing a list of Items.
- */
 class BuyerOrdersFragment : Fragment(), BuyersOrdersRecyclerViewAdapter.OnBuyerOrderClickListener {
     private val loginVm: LoginViewModel by viewModels()
     private val buyerOrderVm: OrderViewModel by viewModels()
     private lateinit var buyerUid: String
     private val mAdapter by lazy {
         BuyersOrdersRecyclerViewAdapter(
-                this.context, this
+            this.context, this
         )
     }
 
@@ -76,3 +72,5 @@ class BuyerOrdersFragment : Fragment(), BuyersOrdersRecyclerViewAdapter.OnBuyerO
         buyerOrderVm.updateOrderStatus(order, OrdersContract.Responses.DELIVERED)
     }
 }
+
+

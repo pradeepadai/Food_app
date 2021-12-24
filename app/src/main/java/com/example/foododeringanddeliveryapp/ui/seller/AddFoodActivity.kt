@@ -16,6 +16,7 @@ import com.example.foododeringanddeliveryapp.data.FoodViewModel
 import com.example.foododeringanddeliveryapp.data.LoginViewModel
 import com.example.foododeringanddeliveryapp.helpers.alertBox
 import com.example.foododeringanddeliveryapp.models.Food
+import com.example.foododeringanddeliveryapp.models.User
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage

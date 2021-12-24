@@ -9,7 +9,7 @@ data class Food(
     val price: Double,
     val description: String,
     var image: String?,
-    var seller: com.example.foododeringanddeliveryapp.ENTITY.User,
+    var seller: User?,
     var id: String = ""
 ) : Parcelable {
     constructor() : this("", 0.0, "", null, User(), "")

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
-import androidx.room.FtsOptions
 import com.example.foododeringanddeliveryapp.R
 import com.example.foododeringanddeliveryapp.models.Order
 import com.example.foododeringanddeliveryapp.models.OrdersContract
@@ -128,7 +127,7 @@ class BuyersOrdersRecyclerViewAdapter(
         return mDiffer.currentList.size
     }
 
-    fun submitList(data: ArrayList<FtsOptions.Order>) {
+    fun submitList(data: ArrayList<Order>) {
         with(mDiffer) { submitList(data) }
     }
 

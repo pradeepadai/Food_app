@@ -127,6 +127,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun login() {
+
         if (validateLogin()) {
             val email = txtname.text.toString()
             val password = txtpass.text.toString()

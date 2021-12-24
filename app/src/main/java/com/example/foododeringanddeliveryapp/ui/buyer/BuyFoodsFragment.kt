@@ -9,9 +9,22 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.data.BuyerViewModel
+import com.example.foododeringanddeliveryapp.data.LoginViewModel
+import com.example.foododeringanddeliveryapp.data.OrderViewModel
+import com.example.foododeringanddeliveryapp.data.UserViewModel
+import com.example.foododeringanddeliveryapp.helpers.alertBox
+import com.example.foododeringanddeliveryapp.models.Food
+import com.example.foododeringanddeliveryapp.models.Order
+import com.example.foododeringanddeliveryapp.models.OrdersContract
+import com.example.foododeringanddeliveryapp.models.User
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_buy_foods.*
 import kotlinx.android.synthetic.main.fragment_display_shops.*
+import kotlinx.android.synthetic.main.order_summary.view.*
+import kotlin.math.roundToInt
+import kotlinx.android.synthetic.main.fragment_buy_foods.rvDisplayFoods as rvDisplayFoods1
 
 private const val TAG = "BuyFoodsFragment"
 
