@@ -6,14 +6,13 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.foododeringanddeliveryapp.R
-import com.example.foododeringanddeliveryapp.models.User
-import com.example.foododeringanddeliveryapp.models.UsersContract
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.auth.ktx.userProfileChangeRequest
 import com.google.firebase.ktx.Firebase
-
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.User
+import com.example.foododeringanddeliveryapp.models.UsersContract
 
 private const val TAG = "RegisterUsersViewModel"
 

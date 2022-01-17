@@ -4,16 +4,15 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.foododeringanddeliveryapp.models.Food
-import com.example.foododeringanddeliveryapp.models.FoodsContract
-import com.example.foododeringanddeliveryapp.models.UsersContract
-import com.example.foododeringanddeliveryapp.ui.SELLER_ROLE
 import com.google.firebase.firestore.FieldPath
-import com.google.firebase.firestore.auth.User
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
-
+import com.example.foododeringanddeliveryapp.models.Food
+import com.example.foododeringanddeliveryapp.models.FoodsContract
+import com.example.foododeringanddeliveryapp.models.User
+import com.example.foododeringanddeliveryapp.models.UsersContract
+import com.example.foododeringanddeliveryapp.ui.SELLER_ROLE
 
 class BuyerViewModel(application: Application) : AndroidViewModel(application) {
 

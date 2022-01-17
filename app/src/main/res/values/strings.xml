@@ -111,6 +111,8 @@
     <string name="order_cancelled_success">Order cancelled successfully!</string>
     <string name="confirm_order">Confirm Order</string>
     <string name="delivered">delivered</string>
+    <string name="login_error">Invalid Credentials. Please try again!</string>
+
     <string name="order_customer_name"><b>Customer Name:</b> %1$s</string>
     <string name="order_customer_address"><b>Address:</b> %1$s</string>
     <string name="order_customer_phone"><b>Phone Number:</b> %1$s</string>

@@ -7,22 +7,25 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.example.foododeringanddeliveryapp.R
 import com.example.foododeringanddeliveryapp.data.LoginViewModel
 import com.example.foododeringanddeliveryapp.data.OrderViewModel
 import com.example.foododeringanddeliveryapp.helpers.alertBox
 import com.example.foododeringanddeliveryapp.models.Order
 import com.example.foododeringanddeliveryapp.models.OrdersContract
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_buyer_orders_list.*
 
+/**
+ * A fragment representing a list of Items.
+ */
 class BuyerOrdersFragment : Fragment(), BuyersOrdersRecyclerViewAdapter.OnBuyerOrderClickListener {
     private val loginVm: LoginViewModel by viewModels()
     private val buyerOrderVm: OrderViewModel by viewModels()
     private lateinit var buyerUid: String
     private val mAdapter by lazy {
         BuyersOrdersRecyclerViewAdapter(
-            this.context, this
+                this.context, this
         )
     }
 
@@ -72,5 +75,3 @@ class BuyerOrdersFragment : Fragment(), BuyersOrdersRecyclerViewAdapter.OnBuyerO
         buyerOrderVm.updateOrderStatus(order, OrdersContract.Responses.DELIVERED)
     }
 }
-
-

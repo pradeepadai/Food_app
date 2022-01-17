@@ -128,7 +128,7 @@ class BuyersOrdersRecyclerViewAdapter(
     }
 
     fun submitList(data: ArrayList<Order>) {
-        with(mDiffer) { submitList(data) }
+        mDiffer.submitList(data)
     }
 
     //    fun updateList(newOrders: ArrayList<Order>?) {

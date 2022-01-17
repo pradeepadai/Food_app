@@ -4,14 +4,12 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.room.FtsOptions
-import com.example.foododeringanddeliveryapp.R
-import com.example.foododeringanddeliveryapp.models.Order
-import com.example.foododeringanddeliveryapp.models.OrdersContract
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
 import com.google.firebase.ktx.Firebase
-
+import com.example.foododeringanddeliveryapp.R
+import com.example.foododeringanddeliveryapp.models.Order
+import com.example.foododeringanddeliveryapp.models.OrdersContract
 
 class OrderViewModel(application: Application) : AndroidViewModel(application) {
     private val _orderSuccess by lazy { MutableLiveData<String>() }

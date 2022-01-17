@@ -2,30 +2,30 @@ package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.app.AlertDialog
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.example.foododeringanddeliveryapp.R
 import com.example.foododeringanddeliveryapp.data.BuyerViewModel
 import com.example.foododeringanddeliveryapp.data.LoginViewModel
 import com.example.foododeringanddeliveryapp.data.OrderViewModel
 import com.example.foododeringanddeliveryapp.data.UserViewModel
 import com.example.foododeringanddeliveryapp.helpers.alertBox
-import com.example.foododeringanddeliveryapp.models.Food
-import com.example.foododeringanddeliveryapp.models.Order
-import com.example.foododeringanddeliveryapp.models.OrdersContract
-import com.example.foododeringanddeliveryapp.models.User
-import com.google.android.material.snackbar.Snackbar
+import com.example.foododeringanddeliveryapp.models.*
 import kotlinx.android.synthetic.main.fragment_buy_foods.*
 import kotlinx.android.synthetic.main.fragment_display_shops.*
+import kotlinx.android.synthetic.main.fragment_display_shops.rvDisplayFoods
 import kotlinx.android.synthetic.main.order_summary.view.*
 import kotlin.math.roundToInt
-import kotlinx.android.synthetic.main.fragment_buy_foods.rvDisplayFoods as rvDisplayFoods1
 
+/**
+ * A simple [Fragment] subclass as the second destination in the navigation.
+ */
 private const val TAG = "BuyFoodsFragment"
 
 //class UnbuggyLinearLayoutManager(context: Context): LinearLayoutManager(context) {

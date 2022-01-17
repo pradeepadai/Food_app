@@ -1,6 +1,6 @@
 package com.example.foododeringanddeliveryapp.API
 
-
+import com.example.foododeringanddeliveryapp.ENTITY.User
 import com.example.foododeringanddeliveryapp.Response.LoginResponse
 import retrofit2.Response
 import retrofit2.http.Body
@@ -12,7 +12,7 @@ interface UserAPI {
     //register user
     @POST("registration/insert")
     suspend fun registerUser(
-        @Body user: com.example.foododeringanddeliveryapp.ENTITY.User
+        @Body user: User
     ): Response<LoginResponse>
 
     //login user

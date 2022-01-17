@@ -1,10 +1,10 @@
 package com.example.foododeringanddeliveryapp.ui.buyer
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,7 +13,9 @@ import com.example.foododeringanddeliveryapp.data.BuyerViewModel
 import com.example.foododeringanddeliveryapp.models.User
 import kotlinx.android.synthetic.main.fragment_display_shops.*
 
-
+/**
+ * A simple [Fragment] subclass as the default destination in the navigation.
+ */
 class DisplayShopsFragment : Fragment(), ShopRecyclerViewAdapter.OnShopClickListener {
 
     private val buyerVm: BuyerViewModel by viewModels()
@@ -33,7 +35,7 @@ class DisplayShopsFragment : Fragment(), ShopRecyclerViewAdapter.OnShopClickList
         buyerVm.users.observe(requireActivity(), {
             if (it.isNullOrEmpty())
                 tvNoShops.visibility = View.VISIBLE
-           // else mAdapter.updateList(it)
+            else mAdapter.updateList(it)
         })
     }
 

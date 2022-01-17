@@ -48,8 +48,7 @@ class ShopRecyclerViewAdapter(
         return if (!users.isNullOrEmpty()) users!!.size else 0
     }
 
-
-    fun updateList(newUsers: ArrayList<User>) {
+    fun updateList(newUsers: ArrayList<User>?) {
         if (newUsers != users) {
             val numItems = itemCount
             users = newUsers
@@ -57,6 +56,4 @@ class ShopRecyclerViewAdapter(
             else notifyItemRangeRemoved(0, numItems)
         }
     }
-
-
 }

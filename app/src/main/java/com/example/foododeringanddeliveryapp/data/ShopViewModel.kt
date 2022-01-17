@@ -5,7 +5,8 @@ import androidx.lifecycle.AndroidViewModel
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-
+import com.example.foododeringanddeliveryapp.models.Shop
+import com.example.foododeringanddeliveryapp.models.ShopsContract
 
 class ShopViewModel(application: Application) : AndroidViewModel(application) {
 
